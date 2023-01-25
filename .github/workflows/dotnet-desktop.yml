@@ -47,6 +47,4 @@ jobs:
         Configuration: ${{ matrix.configuration }}
         
     - name: Publish the application
-      run: dotnet publish
-      env:
-        Configuration: ${{ matrix.configuration }}
+      run: dotnet publish -c Release -r win-x64 -p:PublishReadyToRun=true
