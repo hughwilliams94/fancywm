@@ -47,4 +47,4 @@ jobs:
         Configuration: ${{ matrix.configuration }}
         
     - name: Publish the application
-      run: dotnet publish -c Release -r win-x64  --framework net6.0
+      run: dotnet publish -c Release -r win-x64  --framework net6.0-windows10.0.18362.0
